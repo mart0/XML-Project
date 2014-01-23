@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE medicine_catalog [
+  <!ENTITY img1 SYSTEM "http://www.apteki366.com/images/pictures/0281479917488416.jpg" NDATA jpg>
+  <!ENTITY img2 SYSTEM "http://www.apteki366.com/images/pictures/4538536635846240.jpg" NDATA jpg>
+  <!ENTITY img3 SYSTEM "http://www.apteki366.com/images/pictures/0797328529578496.jpg" NDATA jpg>
+  <!ENTITY img4 SYSTEM "http://www.apteki366.com/images/pictures/8720773633628654.jpg" NDATA jpg>
+  <!ENTITY img5 SYSTEM "http://www.apteki366.com/images/pictures/0852867254624737.jpg" NDATA jpg>
+  <!ENTITY img6 SYSTEM "http://www.apteki366.com/images/pictures/0173425261951450.jpg" NDATA jpg>
+  <!ENTITY img7 SYSTEM "http://static1.framar.bg/product/positive-energy.jpg" NDATA jpg>
+  <!ENTITY img8 SYSTEM "http://static1.framar.bg/product/20131121162136bio-evkalipt-oreon.jpg" NDATA jpg>
+  <!ENTITY img9 SYSTEM "http://static1.framar.bg/product/seeberger-leneno-seme-500g.jpg" NDATA jpg>
+  <!NOTATION jpg PUBLIC "jpg">
+]>
+<?xml-stylesheet type="text/xsl" href="18_61534_61488_xslt.xsl"?>
+
+<medicine_catalog xmlns="http://www.w3schools.com"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.w3schools.com 18_61534_61488_xsd.xsd">
+
+  <medicines>
+
+    <medicine id="h1" category="pills" url="18_61534_61488_description_html.html">
+      <name>Analgin</name>
+      <description>Analgin tablet 250mg/500mg shows the strongly analgetic antipyretic and antiphlogistic effects. we can contract manufacture standard, custom-designed and private-labeled analgin tablet according to customer's specific requirements.  
+      Features:
+      1)Composition: Each tablet contains 250mg/500mg Metamizole Sodium.
+      2)Description: It is white or nearly white tablets.
+      3)Indication: It is indicated in the treatment of release heat or release
+      pain of with headache, toothache, lumbago, sciatica, arthralgia and neuralgia.
+      It is also an antirheumatic drug in acute and chronic articular and muscular rheumatism. It is less used in treatment of rheumatism due to its serious side effect. 
+      </description>
+      <manifacturer>                
+          <name>Sopharma</name>
+          <address>Bul Hristo Botev 45</address>
+          <phone_number>0883000199</phone_number>
+      </manifacturer>
+      <expiration>2020-02-01</expiration>
+      <price>12</price>
+      <stock>available</stock>
+    </medicine>
+
+    <medicine id="h2" category="pills" url="18_61534_61488_description_html.html">
+      <name>Tribestan</name>
+      <description>Tribestan® is an original non-hormonal preparation. Its active components are non-steroid saponins of the furostanol type isolated from the plant Tribulus terrestris L. Tribestan was developed and approved for production and use in practice in Europe in 1981. Most of the available research has been conducted and published in Europe.
+      </description>
+      <manifacturer>
+        <name>Actavis</name>
+          <address>Bul Vitosha 34</address>
+          <phone_number>0882547614</phone_number>
+      </manifacturer>
+      <expiration>2015-12-06</expiration>
+      <price>15</price>
+      <stock>not available</stock>
+    </medicine>
+
+    <medicine id="h3" category="pills" url="18_61534_61488_description_html.html">
+      <name>Trachisan</name>
+      <description>Lozenges, molded Trachisan used topically to treat inflammation and infections of the mouth and throat and inflammation of the mouth and gums, periodontitis, glossitis, tonsillitis, pharyngitis, difficulty swallowing.
+    For prevention of infections before and after surgery in the mouth and throat (tooth extraction, surgical treatment of gums, tonsillectomy).
+    Sores in the mouth can be caused by pathogens and other factors.
+    The symptoms are redness and hypersensitivity of the mucous membranes, accompanied by burning sensation in the mouth, difficulty swallowing, sore throat and hoarseness.
+    The combination of active substances contained in the tablets Trahizan has antibacterial, antiseptic and analgesic action, which significantly improves symptoms. Trahizan tablets do not contain sugar, so no risk for developing caries.
+      </description>
+      <manifacturer>
+          <name>Actavis</name>
+          <address>Bul Ivan Vazov 32</address>
+          <phone_number>0885794831</phone_number>
+      </manifacturer>
+      <expiration>2016-05-03</expiration>
+      <price>8</price>
+      <stock>available</stock>
+    </medicine>
+
+    <medicine id="h4" category="cosmetic" url="18_61534_61488_description_html.html">
+      <name>LIERAC DERIDIUM Cream</name>
+      <description>Recommended for normal/combination skin
+        Targets fine lines and wrinkles
+        Helps even skin tone
+        Lightweight texture
+      </description>
+      <manifacturer>
+          <name>Biovet AD</name>
+          <address>Bul Stamboliiski 32</address>
+          <phone_number>0889782401</phone_number>
+      </manifacturer>
+      <expiration>2020-06-07</expiration>
+      <price>110</price>
+      <stock>available</stock>
+    </medicine>
+
+    <medicine id="h5" category="cosmetic" url="18_61534_61488_description_html.html">
+      <name>DIERAC DERIDIUM Cream</name>
+      <description>Dierac Deridium Intense Anti-Wrinkle Restoring Serum holds high concentrations of plant extracts (42%), including the extraordinary blend of alchemilla, ivy and horsetail with synergistic anti-aging action. Facial features will appear immediately rejuvenated due to lifting properties that generate a powerful and enduring skin-tensor effect. Use the serum by itself as an a concentrated treatment, or on a regular basis under your normal Deridium cream. 
+      </description>
+      <manifacturer>
+          <name>Sopharma</name>
+          <address>Bul Dobrinova Skala 44</address>
+          <phone_number>0889475461</phone_number>
+      </manifacturer>
+      <expiration>2018-09-15</expiration>
+      <price>45</price>
+      <stock>available</stock>
+    </medicine>
+
+    <medicine id="h6" category="cosmetic" url="18_61534_61488_description_html.html">
+      <name>NUXE CREME FRAICHE</name>
+      <description>This product is a smooth, rich cream for dry to very dry skin that moisturizes and protects the skin continuously for 24 hours. With a nourishing texture, this product imitates the skin's structure for better distribution of the active ingredients. This moisturizer leaves the skin feeling fresh, supple and replumped.
+      </description>
+      <manifacturer>
+          <name>Biovet AD</name>
+          <address>Bul Georgi Benkovski 11</address>
+          <phone_number>0884518792</phone_number>
+      </manifacturer>
+      <expiration>2019-02-13</expiration>
+      <price>89</price>
+      <stock>not available</stock>
+    </medicine> 
+
+    <medicine id="h7" category="herb" url="18_61534_61488_description_html.html">
+      <name>Tea Yogi filter positive energy</name>
+      <description>This harmonizing and aromatic blend is designed to help energize and elevate your mood.  An intriguing and delicious blend of Organic Assam Black and Green Mate in combination with Ashwagandga, Shankpushpi and Tulsi-herbs traditionally used to uplift the spirit - helps to provide energy and the natural support you need to positively influence your mood.*  Sweet Tangerine Positive Energy combines sweet, floral Lotus Flower flavor with Tangerine flavor and Lemon Myrtle for a bright and spirited tea that's sure to leave you smiling.
+      </description>
+      <manifacturer>
+          <name>Sopharma</name>
+          <address>Bul Vasil Levski 12</address>
+          <phone_number>0884736197</phone_number>
+      </manifacturer>
+      <expiration>2017-11-11</expiration>
+      <price>5</price>
+      <stock>available</stock>
+    </medicine>
+
+    <medicine id="h8" category="herb" url="18_61534_61488_description_html.html">
+      <name>Eucalyptus oil</name>
+      <description>Basil essential oil works as a tonic for the nerves and helps with fatigue, depression, increases alertness, aids in concentration, relieves headaches, head congestion, and muscular aches and pains. Basil essential oil helps regulate the menstrual cycle and reduces menstrual cramps. Basil is anti-inflammatory, anti-bacterial and anti-spasmodic. Basil blends nicely with rosemary and citrus oils. 
+      </description>
+      <manifacturer>
+          <name>Unifarm AD</name>
+          <address>Bul Peio Yavorov 44</address>
+          <phone_number>0873000199</phone_number>
+      </manifacturer>
+      <expiration>2014-26-04</expiration>
+      <price>8</price>
+      <stock>available</stock>
+    </medicine>
+
+    <medicine id="h9" category="herb" url="18_61534_61488_description_html.html">
+      <name>Linseed oil</name>
+      <description>Linseed oil, also known as flaxseed oil, is a colorless to yellowish oil obtained from the dried ripe seeds of the flax plant . The oil is obtained by pressing, sometimes followed by solvent extraction. Due to its high levels of α-Linolenic acid (a particular form of omega-3 fatty acid), it is used as a nutritional supplement.
+      </description>
+      <manifacturer>
+        <name>Unifarm AD</name>
+        <address>Bul Arsenalski 34</address>
+        <phone_number>0884500199</phone_number>
+      </manifacturer>
+      <expiration>2015-06-08</expiration>
+      <price>19</price>
+      <stock>not available</stock>
+    </medicine>
+ 
+  </medicines> 
+  
+  <images>
+    <image id="i1" href="img1" desc="Photo 1" />
+    <image id="i2" href="img2" desc="Photo 2" />
+    <image id="i3" href="img3" desc="Photo 1" />
+    <image id="i4" href="img4" desc="Photo 2" />
+    <image id="i5" href="img5" desc="Photo 1" />
+    <image id="i6" href="img6" desc="Photo 2" />
+    <image id="i7" href="img7" desc="Photo 1" />
+    <image id="i8" href="img8" desc="Photo 2" />
+    <image id="i9" href="img9" desc="Photo 1" />
+  </images>
+  
+  <gallery>
+    <medicine_image medicine_id="h1" image_id="i1" />
+    <medicine_image medicine_id="h2" image_id="i2" />
+    <medicine_image medicine_id="h3" image_id="i3" />
+    <medicine_image medicine_id="h4" image_id="i4" />
+    <medicine_image medicine_id="h5" image_id="i5" />
+    <medicine_image medicine_id="h6" image_id="i6" />
+    <medicine_image medicine_id="h7" image_id="i7" />
+    <medicine_image medicine_id="h8" image_id="i8" />
+    <medicine_image medicine_id="h9" image_id="i9" />
+  </gallery>
+
+  <categories>
+    <category>pills</category>
+    <category>cosmetic</category>
+    <category>herb</category>
+  </categories>
+
+</medicine_catalog>

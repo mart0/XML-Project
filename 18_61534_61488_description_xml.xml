@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE medicine_catalog [
+  <!ENTITY img1 SYSTEM "http://www.apteki366.com/images/pictures/0281479917488416.jpg" NDATA jpg>
+  <!ENTITY img2 SYSTEM "http://www.apteki366.com/images/pictures/4538536635846240.jpg" NDATA jpg>
+  <!ENTITY img3 SYSTEM "http://www.apteki366.com/images/pictures/0797328529578496.jpg" NDATA jpg>
+  <!ENTITY img4 SYSTEM "http://www.apteki366.com/images/pictures/8720773633628654.jpg" NDATA jpg>
+  <!ENTITY img5 SYSTEM "http://www.apteki366.com/images/pictures/0852867254624737.jpg" NDATA jpg>
+  <!ENTITY img6 SYSTEM "http://www.apteki366.com/images/pictures/0173425261951450.jpg" NDATA jpg>
+  <!ENTITY img7 SYSTEM "http://static1.framar.bg/product/positive-energy.jpg" NDATA jpg>
+  <!ENTITY img8 SYSTEM "http://static1.framar.bg/product/20131121162136bio-evkalipt-oreon.jpg" NDATA jpg>
+  <!ENTITY img9 SYSTEM "http://static1.framar.bg/product/seeberger-leneno-seme-500g.jpg" NDATA jpg>
+  <!NOTATION jpg PUBLIC "jpg">
+]>
+<?xml-stylesheet type="text/xsl" href="18_61534_61488_description_xslt.xsl"?>
+
+<medicine_catalog xmlns="http://www.w3schools.com"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.w3schools.com 18_61534_61488_xsd.xsd">
+
+  <medicines>
+
+    <medicine id="h1" category="medicine">
+      <name >Analgin</name>
+      <picture location="img1"/>
+      <description>Analgin tablet 250mg/500mg shows the strongly analgetic antipyretic and antiphlogistic effects. we can contract manufacture standard, custom-designed and private-labeled analgin tablet according to customer's specific requirements.  
+      Features:
+      1)Composition: Each tablet contains 250mg/500mg Metamizole Sodium.
+      2)Description: It is white or nearly white tablets.
+      3)Indication: It is indicated in the treatment of release heat or release
+      pain of with headache, toothache, lumbago, sciatica, arthralgia and neuralgia.
+      It is also an antirheumatic drug in acute and chronic articular and muscular rheumatism. It is less used in treatment of rheumatism due to its serious side effect. 
+      </description>
+      <manifacturer>
+          <address>Bul Hristo Botev 45</address>
+          <phone_number>0883000199</phone_number>
+      </manifacturer>
+      <expiration>2020-02-01</expiration>
+      <price>12$</price>
+      <stock>available</stock>
+    </medicine>
+
+  </medicines>
+    
+</medicine_catalog>

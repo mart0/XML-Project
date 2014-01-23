@@ -1,0 +1,202 @@
+ <?xml version="1.0"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="http://www.w3schools.com"
+			xmlns="http://www.w3schools.com"
+			elementFormDefault="qualified">
+
+		<!-- *******Keys****** -->
+
+		<xs:key name="keyMedicine">
+                  <xs:selector xpath=".//medicine" />
+                  <xs:field xpath="@category" />
+                  <xs:field xpath="@id" />
+                  <xs:field xpath="@url" />
+        </xs:key>
+
+        <xs:key name="keyManifacturer">
+                  <xs:selector xpath=".//manifacturer" />
+                  <xs:field xpath="name" />
+                  <xs:field xpath="phone_number" />
+                  <xs:field xpath="address" />
+        </xs:key>
+
+        <xs:key name="keyCategory">
+     		<xs:selector xpath="medicine_catalog" />
+      		<xs:field xpath="categories/category" />
+    	</xs:key>
+    	<xs:keyref name="categoryRef" refer="keyCategory">
+	      <xs:selector xpath="medicine_catalog/medicines/medicine" />
+	      <xs:field xpath="@category" />
+    	</xs:keyref>
+
+		<xs:key name="keyGallery">
+			<xs:selector xpath="medicine_catalog" />
+			<xs:field xpath="medicines/medicine/@id" />
+			<xs:field xpath="images/image/@id" />
+		</xs:key>
+		<xs:keyref name="galleryRef" refer="keyGallery">
+			<xs:selector xpath="medicine_catalog/gallery/medicine_image" />
+			<xs:field xpath="@medicine_id" />
+			<xs:field xpath="@image_id" />
+		</xs:keyref>
+
+		<!-- *******Unique elements****** -->
+
+		<xs:unique name="medicineUnique">
+     		<xs:selector xpath="medicine"/>
+     		<xs:field xpath="@id"/>
+     		<xs:field xpath="@url"/>
+		</xs:unique>
+
+<!-- ************ Simple Elements Declaration*************** -->
+
+	<xs:element name="name" type="xs:string" />
+
+	<xs:element name="description" type="xs:string" />
+
+	<xs:element name="address" type= "xs:string"/ >
+
+	<xs:element name="phone_number">
+		<xs:simpleType>
+			<xs:restriction base="xs:int">
+				<xs:pattern value="(\d{3} \d{3} \d{3})|(\d{2} \d{4} \d{3})" />
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="expiration" type="xs:date">
+		<xs:simpleType>
+			<xs:restriction base="xs:date">
+				<xs:minInclusive value="2012-01-01"/>
+				<xs:maxInclusive value="2100-01-01"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
+	<xs:element name="price" type="xs:positiveInteger"/>
+
+	<xs:element name="stock" type="xs:string"/>
+
+
+
+	<!-- *************** / All elements declaration ************* -->
+
+	<!-- *************** Attributes ************** -->
+
+	<xs:simpleType name="category_type">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="medicines" />
+			<xs:enumeration value="cosmetic" />
+			<xs:enumeration value="herbs" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="medicine_id_type">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="h[1-9]?[1-9]" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="image_id_type">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="i[1-9][0-9]?[0-9]?" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<!-- ***************/ Attributes ************** -->	
+
+	<!-- *************** Complex elements ************** -->
+
+	<xs:element name="manifacturer">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="address"/>
+				<xs:element ref="phone_number" />
+				<xs:element ref="name" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="medicine">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="name" />
+				<xs:element ref="description" />
+				<xs:element ref="manifacturer" />
+				<xs:element ref="expiration" />
+				<xs:element ref="price" />
+				<xs:element ref="stock" />
+			</xs:sequence>
+			<xs:attribute name="id" type="medicine_id_type" use="required" />
+			<xs:attribute name="category" type="category_type" use="required" />	
+			<xs:attribute name="url" type="url_type" use="required" />		
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="image">
+		<xs:complexType>
+			<xs:attribute name="id" type="image_id_type" use="required" />
+			<xs:attribute name="href" type="xs:ENTITY" use="required" />
+			<xs:attribute name="desc" type="desc_type" use="required" />
+		</xs:complexType>
+	</xs:element>
+
+	<!-- ***************/ Complex elements ************** -->
+
+	<!-- *************** Main tags ************** -->
+
+	<xs:element name="medicines">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="medicine" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="images">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="image" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="picture">
+  		<xs:complexType>
+   			 <xs:attribute name="location" type="xs:ENTITY"/>
+ 		 </xs:complexType>
+	</xs:element>
+
+	<xs:element name="gallery">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="medicine_image" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="categories">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="category" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<!-- ***************/ Main tags ************** -->
+
+	<!-- *************** whole document ************** -->
+
+	<xs:element name="medicines_catalog">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="medicines" />
+				<xs:element ref="images" />
+				<xs:element ref="categories" />
+				<xs:element ref="gallery" />
+			</xs:sequence>
+		</xs:complexType>	
+	</xs:element>
+	
+</xs:schema> 
